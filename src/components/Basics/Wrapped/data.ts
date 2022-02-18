@@ -1,6 +1,6 @@
-import { IWrappedSystem } from '~/utils';
+import { IWrappedSystem, withChildren } from '~/utils';
 
-export interface IWrapped extends IWrappedSystem {
+export interface IWrapped extends IWrappedSystem, withChildren {
   testID?: string;
   center?: boolean;
   onPress?(): void;

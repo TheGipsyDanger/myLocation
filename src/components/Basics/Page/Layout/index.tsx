@@ -4,11 +4,7 @@ import { IPageLayout } from '../data';
 import { Wrapped } from '../../Wrapped';
 import * as C from './styles';
 
-export const Page: React.FC<IPageLayout> = ({
-  children,
-  bg = 'white',
-  ...props
-}) => {
+export const Page = ({ children, bg = 'white', ...props }: IPageLayout) => {
   return (
     <C.SafeAreaStyled bg={bg}>
       <C.KeyboardAvoidStyled

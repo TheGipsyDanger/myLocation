@@ -1,25 +1,6 @@
-import {
-  BorderProps,
-  BoxShadowProps,
-  ColorProps,
-  FlexboxProps,
-  SpaceProps,
-  TypographyProps,
-  BackgroundColorProps,
-  LayoutProps,
-  BorderColorProps,
-} from "styled-system";
+import { IWrappedSystem, withChildren } from '~/utils';
 
-export interface IPage
-  extends BorderProps,
-    BoxShadowProps,
-    ColorProps,
-    FlexboxProps,
-    SpaceProps,
-    TypographyProps,
-    BackgroundColorProps,
-    BorderColorProps,
-    LayoutProps {
+export interface IPage extends IWrappedSystem, withChildren {
   testID?: string;
 }
 
