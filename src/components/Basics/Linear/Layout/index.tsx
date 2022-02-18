@@ -1,18 +1,15 @@
-import * as React from "react";
-import { TouchableOpacity } from "react-native";
+import * as React from 'react';
+import { TouchableOpacity } from 'react-native';
 
-import { defineLinearColors } from "../../../../styles";
+import { ILinearLayout } from '../data';
+import C from './styles';
 
-import { ILinearLayout } from "../data";
-import C from "./styles";
-
-export const Linear: React.FC<ILinearLayout> = ({
+export const Linear = ({
   children,
-  coin = "BTC",
+  primary,
+  secondary,
   ...props
-}) => {
-  const { color_1, color_2 } = defineLinearColors(coin);
-
+}: ILinearLayout) => {
   const as = props.onPress && TouchableOpacity;
 
   return (
@@ -20,10 +17,9 @@ export const Linear: React.FC<ILinearLayout> = ({
     <C.Wrapped
       {...{ as }}
       {...props}
-      colors={[color_1, color_2]}
+      colors={[primary, secondary]}
       start={{ x: 1, y: 0 }}
-      end={{ x: 0, y: 1 }}
-    >
+      end={{ x: 0, y: 1 }}>
       {children}
     </C.Wrapped>
   );

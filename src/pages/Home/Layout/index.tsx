@@ -1,13 +1,13 @@
 import * as React from 'react';
 
-import { Wrapped, Page, Text } from '~/components';
+import { Wrapped, Page, Text, Linear } from '~/components';
 
 import { IHomeLayout } from '../data';
 
 export const Home = ({ data }: IHomeLayout) => (
-  <Page bg="WHITE">
-    <Wrapped flex={1} center>
+  <Linear flex={1}>
+    <Page bg={'transparent'}>
       <Text>Home</Text>
-    </Wrapped>
-  </Page>
+    </Page>
+  </Linear>
 );
