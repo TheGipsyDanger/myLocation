@@ -4,7 +4,7 @@ import { Linear, Page, Text, Button, Wrapped } from '~/components';
 
 import { IRequestLocationLayout } from '~/pages/RequestLocation/data';
 
-export const RequestLocation = ({ data }: IRequestLocationLayout) => (
+export const RequestLocation = ({ press }: IRequestLocationLayout) => (
   <Linear flex={1}>
     <Page bg={'transparent'} flex={1} justifyContent="center">
       <Wrapped center mb={4}>
@@ -17,7 +17,7 @@ export const RequestLocation = ({ data }: IRequestLocationLayout) => (
         height={60}
         label="Habilitar"
         borderColor="white"
-        onPress={() => alert('Renan')}
+        onPress={press}
       />
     </Page>
   </Linear>

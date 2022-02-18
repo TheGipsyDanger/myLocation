@@ -1,4 +1,5 @@
 import * as Location from 'expo-location';
+import { Linking } from 'react-native';
 import { useStorage } from './useStorage';
 
 export function useLocation() {
@@ -17,7 +18,10 @@ export function useLocation() {
   async function getPermissionLocation() {
     const alreadyRequested = await checkStorageAlreadyRequested();
 
-    if (Object.keys(alreadyRequested).length === 0) {
+    if (
+      alreadyRequested === undefined ||
+      Object.keys(alreadyRequested).length === 0
+    ) {
       const { status } = await Location.requestForegroundPermissionsAsync();
       const boolStatus = status === 'granted' ? false : true;
       setStorage('alreadyRequest', true);
@@ -27,11 +31,29 @@ export function useLocation() {
       const sholdShowRequestView = checkStorageSholdShowRequestView();
       return sholdShowRequestView;
     }
+
+    // return true;
     // await cleanStorage();
-    // return false;
+  }
+
+  async function getPermissionStatus() {
+    const { status } = await Location.requestForegroundPermissionsAsync();
+    return status === 'granted' ? true : false;
+  }
+
+  async function getLocation() {
+    const resp = await Location.getCurrentPositionAsync({});
+    return resp;
+  }
+
+  function openDeviceSettings() {
+    Linking.openSettings();
   }
 
   return {
+    getLocation,
+    openDeviceSettings,
+    getPermissionStatus,
     getPermissionLocation,
   };
 }

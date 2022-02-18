@@ -2,4 +2,6 @@ export interface IRequestLocation {
   data?: any;
 }
 
-export interface IRequestLocationLayout extends IRequestLocation {}
+export interface IRequestLocationLayout extends IRequestLocation {
+  press(): void;
+}
