@@ -39,7 +39,20 @@ export const colors: IStringMap = {
   SUBLABEL: '#777777',
 };
 
-export const fonts: IStringMap = {};
+export const fonts: IStringMap = {
+  regular: 'Regular',
+  italic: 'Italic',
+  light: 'Light',
+  black: 'Black',
+  bold: 'Bold',
+  medium: 'Medium',
+  thin: 'Thin',
+  blackItalic: 'Black-Italic',
+  boldItalic: 'Bold-Italic',
+  lightItalic: 'Light-Italic',
+  mediumItalic: 'Medium-Italic',
+  thinItalic: 'Thin-Italic',
+};
 
 export const radii: StringToNumberMap = {
   Light: defaultSpace() / 2,
