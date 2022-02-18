@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { useState } from 'react';
 import { loadAsync } from 'expo-font';
+import { setStatusBarStyle } from 'expo-status-bar';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { NavigationContainer } from '@react-navigation/native';
 import AppLoading from 'expo-app-loading';
@@ -10,6 +11,8 @@ import Routes from './src/routes/Routes';
 
 export default function App() {
   const [isLoadingComplete, setLoadingComplete] = useState<boolean>(false);
+
+  setStatusBarStyle('light');
 
   async function loadResourcesAsync() {
     try {

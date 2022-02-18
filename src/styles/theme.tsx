@@ -24,12 +24,10 @@ export const space = [
 
 export const fontSizes: IStringMap = {
   tiny: '12px',
-  xsmall: '12px',
-  small: '12px',
-  default: '12px',
-  big: '12px',
-  large: '12px',
-  xlarge: '12px',
+  small: '24px',
+  default: '36px',
+  big: '72px',
+  large: '144px',
 };
 
 export const colors: IStringMap = {
