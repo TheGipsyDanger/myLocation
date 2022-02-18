@@ -32,22 +32,27 @@ export default {
     variant({
       variants: {
         smallRegular: {
+          color: colors['WHITE'],
           fontFamily: fonts['regular'],
           fontSize: fontSizes['small'],
         },
         smallMedium: {
+          color: colors['WHITE'],
           fontFamily: fonts['medium'],
           fontSize: fontSizes['small'],
         },
         large: {
+          color: colors['WHITE'],
           fontFamily: fonts['medium'],
           fontSize: fontSizes['large'],
         },
         big: {
+          color: colors['WHITE'],
           fontFamily: fonts['medium'],
           fontSize: fontSizes['big'],
         },
         default: {
+          color: colors['WHITE'],
           fontFamily: fonts['medium'],
           fontSize: fontSizes['default'],
         },

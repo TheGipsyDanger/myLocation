@@ -53,9 +53,9 @@ export const fonts: IStringMap = {
 };
 
 export const radii: StringToNumberMap = {
-  Light: defaultSpace() / 2,
-  Medium: defaultSpace(),
-  Circle: 100,
+  light: defaultSpace() / 2,
+  medium: defaultSpace(),
+  circle: 100,
 };
 
 export const shadows: IStringMap = {
