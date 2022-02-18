@@ -1,7 +1,11 @@
 import * as React from 'react';
-import { IHome, texts } from './data';
+
+import { useDayHour } from '~/utils';
+
+import { IHome } from './data';
 import { Home as Layout } from './Layout';
 
 export const Home = (props: IHome) => {
-  return <Layout {...props} data={texts} />;
+  const { getPeriod } = useDayHour();
+  return <Layout {...props} />;
 };

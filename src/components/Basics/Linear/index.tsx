@@ -1,12 +1,13 @@
 import * as React from 'react';
 
-import { defineLinearColors } from '~/utils';
+import { useDayHour, defineLinearColors } from '~/utils';
 
 import { ILinear } from './data';
 import { Linear as Layout } from './Layout';
 
 export const Linear = (props: ILinear) => {
-  const { primary, secondary } = defineLinearColors('MORNING');
+  const { getPeriod } = useDayHour();
+  const { primary, secondary } = defineLinearColors(getPeriod());
 
   const layoutProps = {
     ...props,
