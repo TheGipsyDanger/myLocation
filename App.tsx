@@ -6,11 +6,16 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { NavigationContainer } from '@react-navigation/native';
 import AppLoading from 'expo-app-loading';
 
-import { Store } from './src/components';
-import Routes from './src/routes/Routes';
+import { Store } from '~/components';
+
+import { useLocation } from '~/utils';
+
+import Routes from '~/routes/Routes';
 
 export default function App() {
+  const { getPermissionLocation } = useLocation();
   const [isLoadingComplete, setLoadingComplete] = useState<boolean>(false);
+  const [showRequestFlow, setShowRequestFlow] = useState<boolean | null>(null);
 
   setStatusBarStyle('light');
 
@@ -30,6 +35,8 @@ export default function App() {
         'Medium-Italic': require('./assets/fonts/Roboto-MediumItalic.ttf'),
         'Thin-Italic': require('./assets/fonts/Roboto-ThinItalic.ttf'),
       });
+      const resp = await getPermissionLocation();
+      setShowRequestFlow(resp);
     } catch (error) {
       console.log('Erro no carregamento do app', error);
     }
@@ -56,7 +63,7 @@ export default function App() {
     <SafeAreaProvider>
       <NavigationContainer>
         <Store>
-          <Routes />
+          <Routes {...{ showRequestFlow }} />
         </Store>
       </NavigationContainer>
     </SafeAreaProvider>

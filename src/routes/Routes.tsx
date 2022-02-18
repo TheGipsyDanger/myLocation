@@ -1,6 +1,7 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
-import * as views from '../pages';
+import { IRoutes } from '~/utils';
+import * as views from '~/pages';
 
 const Stack = createStackNavigator();
 
@@ -18,9 +19,10 @@ function defineRoutesProps(name: string) {
 
 const viewsNames = Object.keys(views);
 
-export default function Routes() {
+export default function Routes({ showRequestFlow }: IRoutes) {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator
+      initialRouteName={showRequestFlow ? 'RequestLocation' : 'Home'}>
       {viewsNames.map(viewName => (
         <Stack.Screen key={viewName} {...defineRoutesProps(viewName)} />
       ))}
