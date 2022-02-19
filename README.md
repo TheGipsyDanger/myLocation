@@ -1,3 +1,5 @@
+> Wiki do projeto :point_right: https://github.com/TheGipsyDanger/172231233/wiki
+
 ## Projeto criado com Generator's
 
 Usando o generators, garantimos padrão, escalabilidade e produtividade.
@@ -21,7 +23,7 @@ https://axios-http.com/docs/intro
 
 https://github.com/dai-shi/use-context-selector
 
-### styled-system
+### Styled-system
 
 https://styled-system.com
 
