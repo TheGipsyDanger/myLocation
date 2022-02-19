@@ -1,4 +1,9 @@
-import { IPeriodImage } from '~/utils';
+import { IPeriodImage, IWeather } from '~/utils';
+
 export interface IHome {}
 
-export interface IHomeLayout extends IHome, IPeriodImage {}
+export interface IHomeLayout extends IHome, IPeriodImage {
+  weather: IWeather;
+  isLoading: boolean;
+  update(): void;
+}

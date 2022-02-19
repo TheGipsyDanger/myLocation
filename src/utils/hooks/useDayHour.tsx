@@ -1,4 +1,4 @@
-import { ILinearPeriod } from '~/utils';
+import { ILinearPeriod, IStringMap } from '~/utils';
 
 export function useDayHour() {
   function defineHour() {
@@ -13,7 +13,22 @@ export function useDayHour() {
     return 'NIGHT';
   }
 
+  function getDay() {
+    const days: IStringMap = {
+      0: 'domingo',
+      1: 'segunda',
+      2: 'terça',
+      3: 'quarta',
+      4: 'quinta',
+      5: 'sexta',
+      6: 'sábado',
+    };
+    const now = new Date();
+    return days[now.getDay()];
+  }
+
   return {
+    getDay,
     getPeriod,
   };
 }

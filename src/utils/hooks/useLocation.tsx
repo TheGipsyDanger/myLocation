@@ -31,9 +31,6 @@ export function useLocation() {
       const sholdShowRequestView = checkStorageSholdShowRequestView();
       return sholdShowRequestView;
     }
-
-    // return true;
-    // await cleanStorage();
   }
 
   async function getPermissionStatus() {

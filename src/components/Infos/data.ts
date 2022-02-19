@@ -1,5 +1,8 @@
+import { IWeather } from '~/utils';
 export interface IInfos {
-  data?: any;
+  weather: IWeather;
 }
 
-export interface IInfosLayout extends IInfos {}
+export interface IInfosLayout extends IInfos {
+  day: string;
+}
