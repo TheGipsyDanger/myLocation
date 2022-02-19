@@ -1,65 +1,29 @@
-<p align="center" >
-  <p align="center" >
-    <a href="">
-      <img alt="react-native-gifted-chat" src="https://user-images.githubusercontent.com/22872282/77975177-b34a2900-72cf-11ea-845d-6e40ab6718d4.png" />
-    </a>
-  </p>
+## Projeto criado com Generator's
 
-<h3 align="center">
-  Template for React Native Projects
-</h3>
-<p align="center">
-  A solution for standardizing your project.
-</p>
+Usando o generators, garantimos padrão, escalabilidade e produtividade.
 
-<p align="center">
-  <a title='License' href="https://github.com/FaridSafi/react-native-gifted-chat/blob/master/LICENSE" height="18">
-    <img src='https://img.shields.io/badge/license-MIT-blue.svg' />
-  </a>
-</p>
+Todos eles são criados e importados/exportados de forma que fiquem de acessíveis de qualquer lugar da aplicação.
 
-#
+rode `yarn g | yarn generator` para acessar as opções do generator.
 
-#### The template was created so we can start the project faster. Unifying all the logic of the redux, in a single file like in duck pattern. We also have a template generator where we can create several components with only this command.
-
-## Starting project with this template
-
-You can starting a new project this way:
-
-`expo init MyAppName --template react-native-template-vindicce-context`
-
-#
-
-  <p align="center" >
-    <a href="">
-      <img alt="react-native-gifted-chat" src="https://user-images.githubusercontent.com/22872282/77976697-0aea9380-72d4-11ea-96bb-2d4484a8c6a6.png" />
-    </a>
-  </p>
-
-## Generator Options
-
-run `yarn g` to see the options
-
-- `Function View`: • View, to create Views(Container's), with redux.
-- `Component`: • Components, for the creation of components.
-- `Flow`: • Flow, to create a new application flow, already as a standard view, with redux.
-- `Hooks`: To create a new hooks/context.
-
-#### :exclamation: `The model will take care of creating and making all imports to leave what was created with global access.`
-
-## import examples
-
-All codes can be imported from the index.js of their respective folders.
-
-```components
-
-import React from 'react'
-import { CustomButton, CustomBackground } from '../components'
-...
-
-```
+- `Page`: • Para criar uma Page, sempre é associada a um stack de navegação.
+- `Component`: • Para criar um Component.
+- `Context`: Para criar um contexto para controlar o estado da aplicação.
+- `Flow`: • Para criar um stack novo, já com uma Page de inicio.
 
 ## Links with libs
+
+### Axios
+
+https://axios-http.com/docs/intro
+
+### Use-Context-Selector
+
+https://github.com/dai-shi/use-context-selector
+
+### styled-system
+
+https://styled-system.com
 
 ### Styled-components
 
@@ -69,7 +33,6 @@ https://styled-components.com
 
 https://reacttraining.com/react-router/core/guides/quick-start
 
+## Duvidas ou sugestões?
 
-## You have a question?
-
-Please send email for the henriquebasshvf@gmail.com
+Entre em contato comigo pelos email's: henriquebasshvf@gmail.com ou renan.henrique.fonte@gmail.com
