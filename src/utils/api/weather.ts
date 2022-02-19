@@ -1,4 +1,5 @@
-import { API } from './API';
+// import { API } from './API';
+import api from 'axios';
 import { OPEN_WEATHER_KEY } from '~/configs';
 import { IWeatherResp } from '~/utils';
 

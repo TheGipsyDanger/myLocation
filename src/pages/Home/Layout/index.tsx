@@ -15,13 +15,13 @@ import {
 import { IHomeLayout } from '../data';
 
 export const Home = ({ isLoading, update, ...props }: IHomeLayout) => (
-  <Linear flex={1}>
+  <Linear testID="Home" flex={1}>
     <Page bg={'transparent'} flex={1} justifyContent="flex-end">
       <Conditional render={isLoading}>
-        <Wrapped flex={1} center>
+        <Wrapped testID="Home:loading" flex={1} center>
           <ActivityIndicator size="large" />
         </Wrapped>
-        <View animation="fadeInUpBig">
+        <View animation="fadeInUpBig" testID="Home:info">
           <PeriodImage {...props} />
           <Infos {...props} />
           <Button
