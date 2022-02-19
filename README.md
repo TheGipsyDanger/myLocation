@@ -1,40 +1,30 @@
+# Bem-vindo ao MyLocation
+
+## Docs:
 > Wiki do projeto :point_right: https://github.com/TheGipsyDanger/172231233/wiki
 
-## Projeto criado com Generator's
+## O Aplicativo:
+![APP - DEMO](https://user-images.githubusercontent.com/22872282/154798199-d88ba9ac-bed6-45fa-84ef-0d972a6eebbd.png)
 
-Usando o generators, garantimos padrão, escalabilidade e produtividade.
+## Arquivos (Caso queira entender o processo de criação para o aplicativo):
 
-Todos eles são criados e importados/exportados de forma que fiquem de acessíveis de qualquer lugar da aplicação.
 
-rode `yarn g | yarn generator` para acessar as opções do generator.
+_**Projeto completo:**_
 
-- `Page`: • Para criar uma Page, sempre é associada a um stack de navegação.
-- `Component`: • Para criar um Component.
-- `Context`: Para criar um contexto para controlar o estado da aplicação.
-- `Flow`: • Para criar um stack novo, já com uma Page de inicio.
+[driver projeto](https://drive.google.com/drive/folders/1uFJIBZU_P2VWg7cE0yhZliMr1cyKU7Ke?usp=sharing)
 
-## Links with libs
+_**Projeto sketch:**_
 
-### Axios
+[driver sketch](https://drive.google.com/file/d/1vZuMUqd8rpkSA3XY1vCT8KpOPD_HdlTw/view?usp=sharing)
 
-https://axios-http.com/docs/intro
+_**Fluxo Aplicativo:**_
 
-### Use-Context-Selector
+[Fluxo do App](https://drive.google.com/file/d/1e0GioJ6bY-7NZCgwsErSFsUp8LCzHrK9/view?usp=sharing)
 
-https://github.com/dai-shi/use-context-selector
+_**Fluxo de permissão:**_
 
-### Styled-system
+[Fluxo de permissão de localização](https://drive.google.com/file/d/1yFsv9ROio7qI_vpIpqRN5r26Dc3pZYpR/view?usp=sharing)
 
-https://styled-system.com
-
-### Styled-components
-
-https://styled-components.com
-
-### Navigator
-
-https://reacttraining.com/react-router/core/guides/quick-start
-
-## Duvidas ou sugestões?
+### Duvidas ou sugestões?
 
 Entre em contato comigo pelos email's: henriquebasshvf@gmail.com ou renan.henrique.fonte@gmail.com
