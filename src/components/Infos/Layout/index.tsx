@@ -12,22 +12,24 @@ export const Infos = ({
   <Wrapped testID={`Infos`}>
     <Wrapped mb={4} mx={2}>
       <S.TempContent>
-        <Text variant="large">{`${temp}º`}</Text>
+        <Text testID={`Infos:temp`} variant="large">{`${temp}º`}</Text>
         <Wrapped>
           <S.TempSeparator>
             <Text variant="smallRegular">{`max:`}</Text>
-            <Text variant="smallRegular">{`${max}º`}</Text>
+            <Text testID={`Infos:max`} variant="smallRegular">{`${max}º`}</Text>
           </S.TempSeparator>
           <S.TempSeparator>
             <Text variant="smallRegular">{`min:`}</Text>
-            <Text variant="smallRegular">{`${min}º`}</Text>
+            <Text testID={`Infos:min`} variant="smallRegular">{`${min}º`}</Text>
           </S.TempSeparator>
         </Wrapped>
       </S.TempContent>
-      <Text variant="big" mb={1}>
+      <Text testID={`Infos:day`} variant="big" mb={1}>
         {day}
       </Text>
-      <Text variant="default">{name}</Text>
+      <Text testID={`Infos:name`} variant="default">
+        {name}
+      </Text>
     </Wrapped>
   </Wrapped>
 );

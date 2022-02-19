@@ -5,3 +5,4 @@ export * from './components';
 export * from './sizeHelper';
 export * from './hooks';
 export * from './functions';
+export * from './mocks';
