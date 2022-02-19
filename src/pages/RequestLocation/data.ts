@@ -3,5 +3,5 @@ export interface IRequestLocation {
 }
 
 export interface IRequestLocationLayout extends IRequestLocation {
-  press(): void;
+  onPress(): void;
 }
