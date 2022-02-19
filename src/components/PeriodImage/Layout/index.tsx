@@ -10,6 +10,7 @@ export const PeriodImage = ({
   adjustPosition,
 }: IPeriodImageLayout) => (
   <Wrapped
+    testID={`PeriodImage`}
     width={imageWidth}
     height={imageHeight}
     top={-adjustPosition}
