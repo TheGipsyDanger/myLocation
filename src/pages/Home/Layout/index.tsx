@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { ActivityIndicator } from 'react-native';
+import { View } from 'react-native-animatable';
 
 import {
   Page,
@@ -20,7 +21,7 @@ export const Home = ({ isLoading, update, ...props }: IHomeLayout) => (
         <Wrapped flex={1} center>
           <ActivityIndicator size="large" />
         </Wrapped>
-        <Wrapped>
+        <View animation="fadeInUpBig">
           <PeriodImage {...props} />
           <Infos {...props} />
           <Button
@@ -31,7 +32,7 @@ export const Home = ({ isLoading, update, ...props }: IHomeLayout) => (
             borderColor="white"
             onPress={update}
           />
-        </Wrapped>
+        </View>
       </Conditional>
     </Page>
   </Linear>
