@@ -20,14 +20,16 @@ describe('Render RequestLocation', () => {
     const currentElement = getByTestId(`RequestLocation`);
     expect(currentElement).toBeTruthy();
   });
+});
 
-  it('HomeLayout render all Components correct', () => {
+describe('Render RequestLocationLayout', () => {
+  it('RequestLocationLayout render all Components correct', () => {
     const { getByTestId } = render(<RequestLocationLayout onPress={fn} />);
     expect(getByTestId(`RequestLocation:text`)).toBeTruthy();
     expect(getByTestId(`Button`)).toBeTruthy();
   });
 
-  it('HomeLayout render Button correct', () => {
+  it('RequestLocationLayout render Button correct', () => {
     const { getByTestId } = render(<RequestLocationLayout onPress={fn} />);
     const currentElement = getByTestId(`Button`);
     expect(currentElement).toBeTruthy();
@@ -36,7 +38,7 @@ describe('Render RequestLocation', () => {
     expect(fn).toBeCalled();
   });
 
-  it('HomeLayout render Text correct', () => {
+  it('RequestLocationLayout render Text correct', () => {
     const { getByTestId } = render(<RequestLocationLayout onPress={fn} />);
     const currentElement = getByTestId(`RequestLocation:text`);
     expect(currentElement).toBeTruthy();
