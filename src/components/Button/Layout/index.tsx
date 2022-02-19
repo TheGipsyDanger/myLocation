@@ -4,7 +4,11 @@ import { Wrapped, Text } from '~/components/Basics';
 
 import { IButtonLayout } from '~/components/Button/data';
 
-export const Button = ({ label, onPress, ...props }: IButtonLayout) => (
+export const Button = ({
+  label = 'button',
+  onPress,
+  ...props
+}: IButtonLayout) => (
   <Wrapped {...{ onPress }}>
     <Wrapped
       {...props}
@@ -12,7 +16,9 @@ export const Button = ({ label, onPress, ...props }: IButtonLayout) => (
       borderWidth={1}
       borderRadius="circle"
       center>
-      <Text variant="smallMedium">{label}</Text>
+      <Text testID="Button:label" variant="smallMedium">
+        {label}
+      </Text>
     </Wrapped>
   </Wrapped>
 );

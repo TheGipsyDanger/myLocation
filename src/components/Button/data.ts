@@ -1,7 +1,7 @@
 import { IWrappedSystem } from '~/utils';
 
 export interface IButton extends IWrappedSystem {
-  label: string;
+  label?: string;
   onPress(): any;
 }
 
