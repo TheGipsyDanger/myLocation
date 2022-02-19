@@ -37,7 +37,9 @@ describe('Render Home', () => {
     const currentElement = getByTestId(`Home`);
     expect(currentElement).toBeTruthy();
   });
+});
 
+describe('render HomeLayout', () => {
   it('HomeLayout render loading indicator', () => {
     const { getByTestId } = render(<HomeLayout {...defineProps()} />);
     const currentElement = getByTestId(`Home:loading`);
@@ -84,7 +86,9 @@ describe('Render Home', () => {
     expect(currentElement.props.top).toBe(-periodImage.adjustPosition);
     expect(currentElement.props.left).toBe(periodImage.adjustPosition);
   });
+});
 
+describe('Home Functions', () => {
   it('Test getWeather request function', async () => {
     WeatherServiceMock.getWeather.mockResolvedValueOnce(weatherResp);
     const result = await WeatherService.getWeather(0, 0);
