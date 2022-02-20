@@ -1,4 +1,10 @@
-# Bem-vindo ao MyLocation
+<h1 align="center">Bem-vindo ao MyLocation</h1>
+
+<p align="center">
+   <img align="center" width="283" alt="Screen Shot 2022-02-20 at 11 30 33 AM" src="https://user-images.githubusercontent.com/22872282/154847749-8dd57772-e30d-4b0e-9643-4bdcf355b62c.png">
+</p>
+
+>❗ Esse App foi feito com base em im Iphone 11, como era um teste não trabalhei a responsividade 100%, (NAO FOI TESTADO NO ANDROID).
 
 ## Docs:
 > Wiki do projeto :point_right: https://github.com/TheGipsyDanger/172231233/wiki
@@ -24,6 +30,14 @@ _**Fluxo Aplicativo:**_
 _**Fluxo de permissão:**_
 
 [drive fluxo de permissão de localização](https://drive.google.com/file/d/1yFsv9ROio7qI_vpIpqRN5r26Dc3pZYpR/view?usp=sharing)
+
+_**Para testar (Precisa do aplicativo do expo):**_
+
+[Página do myLocation no expo](https://expo.dev/@vindicce.softwares/vindicce_softwares_myLocation)
+
+<p align="center">
+  <img width="283" alt="Screen Shot 2022-02-20 at 11 30 33 AM" src="https://user-images.githubusercontent.com/22872282/154847665-e6c7edab-578c-4e6d-8018-6599a1d9778a.png">
+</p>
 
 ### Duvidas ou sugestões?
 
