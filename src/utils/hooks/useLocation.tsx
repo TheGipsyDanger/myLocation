@@ -3,7 +3,7 @@ import { Linking } from 'react-native';
 import { useStorage } from './useStorage';
 
 export function useLocation() {
-  const { getStorage, setStorage, cleanStorage } = useStorage();
+  const { getStorage, setStorage } = useStorage();
 
   async function checkStorageAlreadyRequested() {
     const resp = await getStorage('alreadyRequested');
